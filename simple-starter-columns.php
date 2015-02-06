@@ -9,10 +9,21 @@
   License: GPL2
 */
 
- add_action('admin_menu', 'plugin_admin_add_page');
-  function plugin_admin_add_page() {
-  add_options_page('Custom Plugin Page', 'Custom Plugin Menu', 'manage_options', 'plugin', 'plugin_options_page');
+  function sstc_admin_page() {
+    include('sstc_admin.php');
   }
+  add_action('admin_menu', 'sstc_admin_page_actions');
+  function sstc_admin_page_actions() {
+    add_options_page('Simple Starter Columns Admin', 'Simple Starter Columns', 'manage_options', 'simple-starter-columns.php', 'sstc_admin_page');
+  }
+
+  function sstc_admin_styles($hook) {
+    if ( 'sstc_admin.php' != $hook ) {
+      wp_enqueue_style( 'ssta-styles', plugins_url( '/assets/css/sstc-admin.min.css', __FILE__ ) );
+      return;
+    }
+  }
+  add_action( 'admin_enqueue_scripts', 'sstc_admin_styles' );
 
   /* -----------------
     Grid Shortcodes
