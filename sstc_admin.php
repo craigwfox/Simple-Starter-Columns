@@ -23,7 +23,7 @@
         <span class="ssta-admin__scode">[sst_col_3_4] [/sst_col_3_4]</span>
       </pre>
       
-      <h3>16% based grid sst_col_1_3, sst_col_2_3</h3>
+      <h3>16% based grid sst_col_1_6, sst_col_1_3, sst_col_1_2, sst_col_2_3, sst_col_5_6</h3>
       <pre class="ssta-admin__code-block">
         <span class="ssta-admin__scode">[sst_col_1_6] [/sst_col_1_6]</span>
         <span class="ssta-admin__scode">[sst_col_1_3] [/sst_col_1_3]</span>
