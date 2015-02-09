@@ -36,6 +36,14 @@
     add_shortcode('sst_col_row', 'sst_row_shortcode');
 
 
+    function sst_col_1_shortcode($atts, $content = null) {
+      extract(shortcode_atts( array(
+        'class_name' => '',
+      ), $atts));
+      return '<div class="sst-col-1 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
+    add_shortcode('sst_col_1', 'sst_col_1_shortcode');
+
+
     function sst_col_1_5_shortcode($atts, $content = null) {
       extract(shortcode_atts( array(
         'class_name' => '',
@@ -66,12 +74,12 @@
 
 
 
-    function sst_col_2_3_shortcode($atts, $content = null) {
+    function sst_col_1_6_shortcode($atts, $content = null) {
       extract(shortcode_atts( array(
         'class_name' => '',
       ), $atts));
-      return '<div class="sst-col-2-3 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
-    add_shortcode('sst_col_2_3', 'sst_col_2_3_shortcode');
+      return '<div class="sst-col-1-6 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
+    add_shortcode('sst_col_1_6', 'sst_col_1_6_shortcode');
 
     function sst_col_1_3_shortcode($atts, $content = null) {
       extract(shortcode_atts( array(
@@ -79,6 +87,20 @@
       ), $atts));
       return '<div class="sst-col-1-3 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
     add_shortcode('sst_col_1_3', 'sst_col_1_3_shortcode');
+
+    function sst_col_2_3_shortcode($atts, $content = null) {
+      extract(shortcode_atts( array(
+        'class_name' => '',
+      ), $atts));
+      return '<div class="sst-col-2-3 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
+    add_shortcode('sst_col_2_3', 'sst_col_2_3_shortcode');
+
+    function sst_col_5_6_shortcode($atts, $content = null) {
+      extract(shortcode_atts( array(
+        'class_name' => '',
+      ), $atts));
+      return '<div class="sst-col-5-6 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
+    add_shortcode('sst_col_5_6', 'sst_col_5_6_shortcode');
 
 
 

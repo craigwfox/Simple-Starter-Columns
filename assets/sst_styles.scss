@@ -36,6 +36,15 @@
     }
 
 
+
+    /* ----- Grid 1/5 ----- */
+      .sst-col-1 {
+        @extend .sst-col;
+
+        width: 100%;
+      }
+
+
     /* ----- Grid 1/5 ----- */
       .sst-col-4-5 {
         @extend .sst-col;
