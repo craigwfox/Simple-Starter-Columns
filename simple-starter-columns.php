@@ -34,7 +34,8 @@
       ), $atts));
       return '<div class="sst-col-row '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
     add_shortcode('sst_col_row', 'sst_row_shortcode');
-    
+
+
     function sst_col_1_5_shortcode($atts, $content = null) {
       extract(shortcode_atts( array(
         'class_name' => '',
@@ -62,35 +63,39 @@
       ), $atts));
       return '<div class="sst-col-4-5 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
     add_shortcode('sst_col_4_5', 'sst_col_4_5_shortcode');
-    
-    function sst_col_3_4_shortcode($atts, $content = null) {
-      extract(shortcode_atts( array(
-        'class_name' => '',
-      ), $atts));
-      return '<div class="sst-col-3-4 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
-    add_shortcode('sst_col_3_4', 'sst_col_3_4_shortcode');
-    
+
+
+
     function sst_col_2_3_shortcode($atts, $content = null) {
       extract(shortcode_atts( array(
         'class_name' => '',
       ), $atts));
       return '<div class="sst-col-2-3 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
     add_shortcode('sst_col_2_3', 'sst_col_2_3_shortcode');
-    
-    function sst_col_1_2_shortcode($atts, $content = null) {
-      extract(shortcode_atts( array(
-        'class_name' => '',
-      ), $atts));
-      return '<div class="sst-col-1-2 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
-    add_shortcode('sst_col_1_2', 'sst_col_1_2_shortcode');
-    
+
     function sst_col_1_3_shortcode($atts, $content = null) {
       extract(shortcode_atts( array(
         'class_name' => '',
       ), $atts));
       return '<div class="sst-col-1-3 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
     add_shortcode('sst_col_1_3', 'sst_col_1_3_shortcode');
-    
+
+
+
+    function sst_col_3_4_shortcode($atts, $content = null) {
+      extract(shortcode_atts( array(
+        'class_name' => '',
+      ), $atts));
+      return '<div class="sst-col-3-4 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
+    add_shortcode('sst_col_3_4', 'sst_col_3_4_shortcode');
+
+    function sst_col_1_2_shortcode($atts, $content = null) {
+      extract(shortcode_atts( array(
+        'class_name' => '',
+      ), $atts));
+      return '<div class="sst-col-1-2 '.esc_attr($class_name).'">'.do_shortcode($content).'</div>';}
+    add_shortcode('sst_col_1_2', 'sst_col_1_2_shortcode');
+
     function sst_col_1_4_shortcode($atts, $content = null) {
       extract(shortcode_atts( array(
         'class_name' => '',

@@ -3,7 +3,7 @@
   Grid
 ===========================================================================
 ------------------------------------------------------------------------ */
-  /* ---- Micro Clearfix - Nicolas Gallagher ---- */
+  // Micro Clearfix - Nicolas Gallagher
     @mixin clearfix{
       &:before, &:after {
         content:"";
@@ -22,6 +22,7 @@
 
     @include clearfix;
   }
+  
     .sst-col {
       height: auto;
 
@@ -31,14 +32,9 @@
 
       box-sizing:border-box;
 
-      &:first-child {
-        padding-left: 0;
-      }
-      &:last-child {
-        padding-right: 0;
-      }
       @include clearfix;
     }
+
 
     /* ----- Grid 1/5 ----- */
       .sst-col-4-5 {
@@ -61,6 +57,7 @@
 
         width: 20%;
       }
+
     
     /* ----- Grid 1/4 ----- */
       .sst-col-3-4 {
@@ -79,14 +76,31 @@
         width: 25%;
       }
 
-    /* ----- Grid 1/3 ----- */
-      .sst-col-2-3 {
+
+    /* ----- Grid 1/6 ----- */
+      .sst-col-1-6 {        
         @extend .sst-col;
 
-        width: 66.666%;
+        width: 16.6667%;
       }
+
       .sst-col-1-3 {
         @extend .sst-col;
 
-        width: 33.333%;
+        width: 33.3333%;
       }
+
+      .sst-col-2-3 {
+        @extend .sst-col;
+
+        width: 66.6667%;
+      }
+
+      .sst-col-5-6 {        
+        @extend .sst-col;
+
+        width: 83.3333%;
+      }
+
+
+
