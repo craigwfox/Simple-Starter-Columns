@@ -8,7 +8,8 @@
       <h3>Wraps each accordion pair</h3>
       <p>[sst_col_row] [/sst_col_row]</p>
       
-      <h3>20% based grid sst_col_1_5, sst_col_2_5, sst_col_3_5, sst_col_4_5, sst_col_1</h3>
+      <h3>20% based grid</h3>
+      <p>sst_col_1_5, sst_col_2_5, sst_col_3_5, sst_col_4_5, sst_col_1</p>
       <pre class="ssta-admin__code-block">
         <span class="ssta-admin__scode">[sst_col_1_5] [/sst_col_1_5] || 20%</span>
         <span class="ssta-admin__scode">[sst_col_2_5] [/sst_col_2_5] || 40%</span>
@@ -17,7 +18,8 @@
         <span class="ssta-admin__scode">[sst_col_1] [/sst_col_1]     || 100%</span>
       </pre>
       
-      <h3>25% based grid sst_col_1_4, sst_col_1_2, sst_col_3_4, sst_col_1</h3>
+      <h3>25% based grid</h3>
+      <p>sst_col_1_4, sst_col_1_2, sst_col_3_4, sst_col_1</p>
       <pre class="ssta-admin__code-block">
         <span class="ssta-admin__scode">[sst_col_1_4] [/sst_col_1_4] || 25%</span>
         <span class="ssta-admin__scode">[sst_col_1_2] [/sst_col_1_2] || 50%</span>
@@ -25,7 +27,8 @@
         <span class="ssta-admin__scode">[sst_col_1] [/sst_col_1]     || 100%</span>
       </pre>
       
-      <h3>16% based grid sst_col_1_6, sst_col_1_3, sst_col_1_2, sst_col_2_3, sst_col_5_6, sst_col_1</h3>
+      <h3>16% based grid</h3>
+      <p>sst_col_1_6, sst_col_1_3, sst_col_1_2, sst_col_2_3, sst_col_5_6, sst_col_1</p>
       <pre class="ssta-admin__code-block">
         <span class="ssta-admin__scode">[sst_col_1_6] [/sst_col_1_6] || 16.6667%</span>
         <span class="ssta-admin__scode">[sst_col_1_3] [/sst_col_1_3] || 33.3333%</span>
