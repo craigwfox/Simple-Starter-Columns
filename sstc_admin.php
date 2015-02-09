@@ -6,26 +6,52 @@
     <div class="ssta-admin__instructions">
       <h2 class="ssta-admin__subtitle">Shortcodes</h2>
       <h3>Wraps each accordion pair</h3>
-      <p>[accordion_section] [/accordion_section]</p>
+      <p>[sst_col_row] [/sst_col_row]</p>
       
-      <h3>Wraps the Accordion Title</h3>
-      <p>[accordion_title] [/accordion_title]</p>
-
-      <h3>Wraps the content of the accordion</h3>
-      <p>[accordion_content] [/accordion_content]</p>
+      <h3>20% grid sst_col_1_5, sst_col_2_5, sst_col_3_5, sst_col_4_5</h3>
+      <p>[sst_col_1_5] [/sst_col_1_5]<br />
+         [sst_col_2_5] [/sst_col_2_5]<br />
+         [sst_col_3_5] [/sst_col_3_5]<br />
+         [sst_col_4_5] [/sst_col_4_5]</p>
+      
+      <h3>20% grid sst_col_1_4, sst_col_1_2, sst_col_3_4</h3>
+      <p>[sst_col_1_4] [/sst_col_1_4]<br />
+         [sst_col_1_2] [/sst_col_1_2]<br />
+         [sst_col_3_4] [/sst_col_3_4]</p>
+      
+      <h3>20% grid sst_col_1_3, sst_col_2_3</h3>
+      <p>[sst_col_1_3] [/sst_col_1_3]<br />
+         [sst_col_2_3] [/sst_col_2_3]</p>
     </div>
 
     <div class="ssta-admin__example">
       <h2 class="ssta-admin__subtitle">Usage Example</h2>
       <pre class="ssta-admin__code-block">
-        <span class="ssta-admin__scode">[accordion_section]</span>
-          <span class="ssta-admin__scode">[accordion_title]</span>
-            &lt;h2&gt; Your Title Here &lt;/h2&gt;
-          <span class="ssta-admin__scode">[/accordion_title]</span>
-          <span class="ssta-admin__scode">[accordion_content]</span>
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-          <span class="ssta-admin__scode">[/accordion_content]</span>
-        <span class="ssta-admin__scode">[/accordion_section]</span>
+        <span class="ssta-admin__scode">[sst_col_row]</span>
+          <span class="ssta-admin__scode">[sst_col_1_4]</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <span class="ssta-admin__scode">[/sst_col_1_4]</span>
+
+          <span class="ssta-admin__scode">[sst_col_3_4]</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <span class="ssta-admin__scode">[/sst_col_3_4]</span>
+        <span class="ssta-admin__scode">[/sst_col_row]</span>
+      </pre>
+
+      <pre class="ssta-admin__code-block">
+        <span class="ssta-admin__scode">[sst_col_row]</span>
+          <span class="ssta-admin__scode">[sst_col_1_5]</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <span class="ssta-admin__scode">[/sst_col_1_5]</span>
+
+          <span class="ssta-admin__scode">[sst_col_2_5]</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <span class="ssta-admin__scode">[/sst_col_2_5]</span>
+
+          <span class="ssta-admin__scode">[sst_col_2_5]</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <span class="ssta-admin__scode">[/sst_col_2_5]</span>
+        <span class="ssta-admin__scode">[/sst_col_row]</span>
       </pre>
     </div>
   </div>
